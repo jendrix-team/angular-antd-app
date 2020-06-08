@@ -1,13 +1,9 @@
 <nz-layout class="app-layout">
-  <nz-sider class="menu-sidebar"
-            nzCollapsible
-            nzWidth="256px"
-            nzBreakpoint="md"
-            [(nzCollapsed)]="isCollapsed"
-            [nzTrigger]="null">
+  <nz-sider class="menu-sidebar" nzCollapsible nzWidth="256px" nzBreakpoint="md" [(nzCollapsed)]="isCollapsed"
+    [nzTrigger]="null">
     <div class="sidebar-logo">
-      <a href="https://ng.ant.design/" target="_blank">
-        <img src="https://ng.ant.design/assets/img/logo.svg" alt="logo">
+      <a href="#">
+        <img src="assets/images/logo.svg" alt="logo">
         <h1>Ant Design Of Angular</h1>
       </a>
     </div>
@@ -41,12 +37,12 @@
           <span class="header-trigger" (click)="isCollapsed = !isCollapsed">
             <i class="trigger" nz-icon [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'"></i>
           </span>
-            <div style="width: 90%;">
-              <div style="display: flex; float: right;">
-                <i nz-icon nzType="user" nzTheme="outline" style="margin-top: 24px; margin-right: 6px;"></i>
-                <h4 nz-typography>Gustavo Willie Fernandez</h4>    
-              </div>
+          <div style="width: 90%;">
+            <div style="display: flex; float: right;">
+              <i nz-icon nzType="user" nzTheme="outline" style="margin-top: 24px; margin-right: 6px;"></i>
+              <h4 nz-typography>Gustavo Willie Fernandez</h4>
             </div>
+          </div>
         </div>
       </div>
     </nz-header>

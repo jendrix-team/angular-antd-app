@@ -11,7 +11,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { IconsProviderModule } from './antd-icons.module';
 
 
-import { NgZorroAntdModule } from './antd-components.module';
+import { NzLayoutModule } from 'ng-zorro-antd/layout';
+import { NzMenuModule } from 'ng-zorro-antd/menu';
+import { NzGridModule } from 'ng-zorro-antd/grid';
 import { NzSpinModule } from 'ng-zorro-antd/spin';
 
 import { NZ_I18N } from 'ng-zorro-antd/i18n';
@@ -32,8 +34,10 @@ registerLocaleData(en);
     HttpClientModule,
     FormsModule,
     BrowserAnimationsModule,
-    NgZorroAntdModule,
     IconsProviderModule,
+    NzLayoutModule,
+    NzMenuModule,
+    NzGridModule,
     NzSpinModule
   ],
   providers: [
